@@ -60,7 +60,7 @@ sub SST_Initialize($) {
         'confirmation_delay',
         'device_id',
         'device_name',
-        'device_type:CONNECTOR,refrigerator,freezer,TV,washer,dryer,vacuumCleaner,room_a_c,switch',
+        'device_type:CONNECTOR,refrigerator,freezer,TV,washer,dryer,vacuumCleaner,room_a_c,switch,dishwasher',
         'disable:1,0',
         'discard_units:1,0',
         'get_timeout',
@@ -490,6 +490,10 @@ sub SST_setDefaults($$) {
         },
         'vacuumCleaner' => {
             'icon' => 'vacuum_top'
+        },
+        'dishwasher' => {
+            'icon' => 'scene_dishwasher',
+            'stateFormat' => "machineState<br>\ndishwasherJobState",
         }
     };
 
